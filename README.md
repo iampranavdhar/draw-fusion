@@ -2,6 +2,8 @@
 
 Welcome to the Multiuser Real-Time Sketching Game, a fun and interactive online game where one user draws a word, and other players in the room try to guess what it is. This project is built using Next.js and Node.js to deliver a seamless and engaging gaming experience.
 
+<img width="927" alt="image" src="https://github.com/iampranavdhar/draw-fusion/assets/73348574/7c037ae8-6bff-4ca4-ba03-d8b5de563042">
+
 ## Getting Started
 
 To get started with the game, follow the steps below:
