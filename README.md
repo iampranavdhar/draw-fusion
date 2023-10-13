@@ -60,3 +60,5 @@ To get started with the game, follow the steps below:
 - [Socket.io Documentation](https://socket.io/docs/v4) - learn about Socket.io features and API.
 
 ## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
