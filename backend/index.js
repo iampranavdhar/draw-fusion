@@ -81,6 +81,7 @@ async function setNextArtist(room_id) {
   });
 
   io.emit("artist-changed", {
+    room_id,
     status: "playing",
     artist: room.artist,
     currentRound: room.currentRound,
@@ -117,7 +118,10 @@ io.on("connection", (socket) => {
 
     console.log(currentRoomStatus[room_id].players, "players");
 
-    io.emit("user-connected", user);
+    io.emit("user-connected", {
+      room_id,
+      user,
+    });
   });
 
   socket.on("start-game", (room_id) => {

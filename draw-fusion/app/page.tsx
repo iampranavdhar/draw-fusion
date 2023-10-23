@@ -49,7 +49,7 @@ export default function Home() {
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-400 uppercase rounded-full bg-teal-accent-400">
-              Brand new
+              Game On!
             </p>
           </div>
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
@@ -76,9 +76,9 @@ export default function Home() {
                   height="24"
                 />
               </svg>
-              <span className="relative">The</span>
+              <span className="relative">Guess</span>
             </span>{" "}
-            Guess the Sketch, Race the Clock!
+            the Sketch, Race the Clock!
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
             Race against the clock to sketch and guess in this fast-paced
@@ -108,11 +108,6 @@ export default function Home() {
           We don't store your names ever and we don't sell your data.
         </p>
       </div>
-      <img
-        src="https://kitwind.io/assets/kometa/half-browser.png"
-        className="w-full max-w-screen-sm mx-auto rounded shadow-2xl md:w-auto lg:max-w-screen-md"
-        alt=""
-      />
     </div>
   );
 }

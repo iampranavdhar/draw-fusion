@@ -64,11 +64,13 @@ const DrawingRoom = ({
   useEffect(() => {
     socket.current = io("http://localhost:4005");
 
-    socket.current.on("user-connected", (user: any) => {
-      console.log("user joined socket", user);
-      setRoom((data: IRoom) => {
-        return { ...data, users: [...data.users, user] };
-      });
+    socket.current.on("user-connected", (socData: any) => {
+      console.log("user joined socket", socData);
+      if (socData.room_id.toString() === params.room_id.toString()) {
+        setRoom((data: IRoom) => {
+          return { ...data, users: [...data.users, socData.user] };
+        });
+      }
     });
 
     socket.current.on("user-disconnected", (_id: any) => {
@@ -84,15 +86,17 @@ const DrawingRoom = ({
 
     socket.current.on("artist-changed", (data: any) => {
       console.log("artist changed", data);
-      setRoom((room: IRoom) => {
-        return {
-          ...room,
-          status: data.status,
-          artist: data.artist._id,
-          currentWord: data.currentWord,
-          artistStartTime: data.artistStartTime,
-        };
-      });
+      if (data.room_id.toString() === params.room_id.toString()) {
+        setRoom((room: IRoom) => {
+          return {
+            ...room,
+            status: data.status,
+            artist: data.artist._id,
+            currentWord: data.currentWord,
+            artistStartTime: data.artistStartTime,
+          };
+        });
+      }
     });
 
     socket.current.on("start-drawing", (data: any) => {
