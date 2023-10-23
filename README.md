@@ -10,7 +10,7 @@ Welcome to the Multiuser Real-Time Sketching Game, a fun and interactive online 
 
 <img width="1467" alt="image" src="https://github.com/iampranavdhar/draw-fusion/assets/73348574/6f238664-20f6-4a22-9216-7ede421cff80">
 
-<img width="1470" alt="image" src="https://github.com/iampranavdhar/draw-fusion/assets/73348574/f737a2f2-3b8c-4415-a7cc-d4333458cd5a">
+<img width="1470" alt="image" src="https://github.com/iampranavdhar/draw-fusion/assets/73348574/983e3655-c1bf-431d-bf71-1ccf49a9a7de">
 
 ## Getting Started
 
